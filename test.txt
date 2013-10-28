@@ -1,2 +1,5 @@
 test
 サーバを変更します。
+
+変更先⇒
+http://jenkins.wda.jp:10888/
