@@ -1,0 +1,3 @@
+-cp src/
+-main jp.wda.GitHubTest
+-swf bin/GitHubTest.swf
