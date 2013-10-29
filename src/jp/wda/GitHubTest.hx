@@ -7,8 +7,14 @@ package jp.wda;
  * @date		$Date$
  */
 class GitHubTest{
+
+	// アプリケーションエントリーポイント ///////////////////////////////////////////////
+	//                                                         Application Entry Point //
+	/////////////////////////////////////////////////////////////////////////////////////
 	
-	// + swf
+	/**
+	 * 
+	 */
 	static function main() {
 		new GitHubTest();
 	}
