@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<project name="GitHubTest"
+         default="all"
+         basedir=".">
+
+	<target name="all" depends="client">
+	</target>
+
+	<target name="client" depends="">
+		<exec executable="haxe">
+			<arg value="build.hxml"/>
+		</exec>
+	</target>
+
+</project>
