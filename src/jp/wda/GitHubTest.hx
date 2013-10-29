@@ -30,4 +30,11 @@ class GitHubTest{
 		
 	}
 	
+	/**
+	 * 
+	 */
+	public function serviceMethod():Void {
+		
+	}
+	
 }
