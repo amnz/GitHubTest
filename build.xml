@@ -3,12 +3,34 @@
          default="all"
          basedir=".">
 
-	<target name="all" depends="client">
+	<property name="report.test.dir" value="${basedir}/report/test"/>
+
+	<target name="all" depends="buildswf">
 	</target>
 
-	<target name="client" depends="">
+	<target name="buildswf" depends="">
 		<exec executable="haxe">
 			<arg value="build.hxml"/>
+		</exec>
+	</target>
+
+	<target name="buildneko" depends="">
+		<exec executable="haxe">
+			<arg value="build.neko.hxml"/>
+		</exec>
+	</target>
+	
+	<target name="unit-test" depends="buildswf,buildneko" description="execute haxe.unit">
+		<delete>
+			<fileset dir="${report.test.dir}" includes="TEST-*"/>
+		</delete>
+		
+		<tstamp>
+			<format property="DATEFOOTER" pattern="yyyyMMddHHmmss" />
+		</tstamp>
+		<exec executable="neko"
+				output="${basedir}/report/test/TEST-UnitTestRunner.log">
+			<arg value="bin/UnitTestRunner.n"/>
 		</exec>
 	</target>
 
