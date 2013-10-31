@@ -5,7 +5,7 @@
 
 	<property name="report.test.dir" value="${basedir}/report/test"/>
 
-	<target name="all" depends="buildswf">
+	<target name="all" depends="buildswf, unit-test">
 	</target>
 
 	<target name="buildswf" depends="">
@@ -13,24 +13,14 @@
 			<arg value="build.hxml"/>
 		</exec>
 	</target>
-
-	<target name="buildneko" depends="">
-		<exec executable="haxe">
-			<arg value="build.neko.hxml"/>
-		</exec>
-	</target>
 	
-	<target name="unit-test" depends="buildswf,buildneko" description="execute haxe.unit">
-		<delete>
-			<fileset dir="${report.test.dir}" includes="TEST-*"/>
-		</delete>
-		
-		<tstamp>
-			<format property="DATEFOOTER" pattern="yyyyMMddHHmmss" />
-		</tstamp>
-		<exec executable="neko"
-				output="${basedir}/report/test/TEST-UnitTestRunner.log">
-			<arg value="bin/UnitTestRunner.n"/>
+	<target name="unit-test" description="execute haxe MassiveUnit">
+		<exec executable="haxelib">
+			<arg value="run"/>
+			<arg value="munit"/>
+			<arg value="test"/>
+			<arg value="-as3"/>
+			<arg value="-kill-browser"/>
 		</exec>
 	</target>
 

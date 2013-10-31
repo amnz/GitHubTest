@@ -1,0 +1,6 @@
+-main TestMain
+-cp src
+-cp test
+-lib munit
+-swf-version 9
+-swf bin/as3_test.swf
