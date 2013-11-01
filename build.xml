@@ -19,8 +19,7 @@
 			<arg value="run"/>
 			<arg value="munit"/>
 			<arg value="test"/>
-			<arg value="-as3"/>
-			<arg value="-kill-browser"/>
+			<arg value="-neko"/>
 		</exec>
 	</target>
 
