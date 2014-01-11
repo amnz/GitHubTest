@@ -3,3 +3,7 @@ test
 
 •ÏXæË
 http://jenkins.wda.jp:10888/
+
+‚³‚ç‚É•ÏXæË
+http://jenwins.webk-vps.com:8080/
+
