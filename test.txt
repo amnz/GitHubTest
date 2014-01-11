@@ -7,3 +7,4 @@ http://jenkins.wda.jp:10888/
 さらに変更先⇒
 http://jenwins.webk-vps.com:8080/
 
+haxeインストールしておくの忘れてた＞＜
