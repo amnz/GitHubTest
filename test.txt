@@ -8,3 +8,5 @@ http://jenkins.wda.jp:10888/
 http://jenwins.webk-vps.com:8080/
 
 haxeインストールしておくの忘れてた＞＜
+
+jenwins再インストール後プッシュテスト
