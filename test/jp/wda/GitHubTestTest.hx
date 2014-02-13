@@ -16,8 +16,24 @@ class GitHubTestTest{
 	 * 
 	 */
 	@Test
-	public function testServiceMethod():Void {
+	public function testServiceMethod1():Void {
 		Assert.isTrue(true);
+	}
+	
+	/**
+	 * 
+	 */
+	@Test
+	public function testServiceMethod2():Void {
+		Assert.isTrue(false);
+	}
+	
+	/**
+	 * 
+	 */
+	@Test
+	public function testServiceMethod3():Void {
+		Assert.isTrue(false);
 	}
 	
 }
