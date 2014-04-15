@@ -10,3 +10,11 @@ http://jenwins.webk-vps.com:8080/
 haxeインストールしておくの忘れてた＞＜
 
 jenwins再インストール後プッシュテスト
+
+
+
+git-mediaご報告
+・使いやすくてわかりやすくて良いですね、これ。ですが、git media syncが少し動作怪しい感じもあります。（sync済みでも doesn't exists ?）
+・ファイル置き場を外部SSHサーバにした場合、syncするときに秘密鍵を使えずパスワード入力が必須なので、jenkinsで自動化は難しいです。
+・ファイル置き場をjenkinsと同じサーバにすれば、jenkins側はlocalで発見できるので使えそうです。
+・ですが、現状jenkinsはWindowsサーバで動かしているので、SCPサーバになれません…SFTPでもよければ何とかなったのですが、無理でした。
