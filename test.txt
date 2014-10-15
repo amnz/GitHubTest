@@ -18,3 +18,6 @@ git-mediaご報告
 ・ファイル置き場を外部SSHサーバにした場合、syncするときに秘密鍵を使えずパスワード入力が必須なので、jenkinsで自動化は難しいです。
 ・ファイル置き場をjenkinsと同じサーバにすれば、jenkins側はlocalで発見できるので使えそうです。
 ・ですが、現状jenkinsはWindowsサーバで動かしているので、SCPサーバになれません…SFTPでもよければ何とかなったのですが、無理でした。
+
+
+Run Condition Pluginテスト中。
